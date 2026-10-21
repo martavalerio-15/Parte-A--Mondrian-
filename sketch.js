@@ -1,6 +1,10 @@
 function setup() {
   createCanvas(800, 784);
   background(233, 237, 232);
+  loadImage("textura.png", function(img) {
+    textura = img;
+    image(textura, 0, 0, 800, 784);
+  });
 }
 
 function draw() {
